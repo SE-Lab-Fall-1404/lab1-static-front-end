@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/HomePage.css';
 
 const HomePage = () => {
@@ -14,9 +15,9 @@ const HomePage = () => {
             <a href="#features" className="btn btn-primary">
               Learn More
             </a>
-            <a href="/contact" className="btn btn-secondary">
+            <Link to="/contact" className="btn btn-secondary">
               Get in Touch
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -60,9 +61,9 @@ const HomePage = () => {
               modern web development practices including Git workflow, branching
               strategies, and continuous deployment.
             </p>
-            <a href="/about" className="btn btn-outline">
+            <Link to="/about" className="btn btn-outline">
               Read More About Us
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -71,4 +72,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
