@@ -115,12 +115,12 @@ const AboutPage = () => {
               our work, we'd love to hear from you.
             </p>
             <div className="cta-buttons">
-              <a href="/contact" className="btn btn-primary">
+              <Link to="/contact" className="btn btn-primary">
                 Get in Touch
-              </a>
-              <a href="/" className="btn btn-outline">
+              </Link>
+              <Link to="/" className="btn btn-outline">
                 Back to Home
-              </a>
+              </Link>
             </div>
           </div>
         </div>
