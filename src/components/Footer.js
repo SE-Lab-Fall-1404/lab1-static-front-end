@@ -1,8 +1,11 @@
 import React from 'react';
 import '../styles/Footer.css';
+import { formatIranianYear, formatIranianPhoneNumber } from '../utils/numberFormatter';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const iranianYear = formatIranianYear(currentYear);
+  const iranianPhone = formatIranianPhoneNumber('+98 (21) 1234-5678');
 
   return (
     <footer className="footer">
@@ -48,7 +51,7 @@ const Footer = () => {
             <h3 className="footer-title">Contact Info</h3>
             <ul className="footer-links">
               <li>Email: info@example.com</li>
-              <li>Phone: +1 (555) 123-4567</li>
+              <li>Phone: {iranianPhone}</li>
               <li>Location: Software Engineering Lab</li>
             </ul>
           </div>
@@ -56,7 +59,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            &copy; {currentYear} Lab 1 Static Frontend. All rights reserved.
+            &copy; {iranianYear} Lab 1 Static Frontend. All rights reserved.
           </p>
           <p className="footer-team">
             Developed with ❤️ by SE Lab Team
