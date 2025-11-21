@@ -12,9 +12,6 @@ const HomePage = () => {
             A modern static frontend application with automatic deployment
           </p>
           <div className="hero-buttons">
-            <a href="#features" className="btn btn-primary">
-              Learn More
-            </a>
             <Link to="/contact" className="btn btn-secondary">
               Get in Touch
             </Link>
